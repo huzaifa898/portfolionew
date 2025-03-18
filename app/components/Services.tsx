@@ -12,11 +12,6 @@ export default function Services() {
       description: "Custom web applications built with React and Next.js, focusing on performance and user experience.",
     },
     {
-      icon: <Server className="w-12 h-12 text-green-500" />,
-      title: "Backend Development",
-      description: "Robust and scalable server-side solutions using Node.js, Express, and Fastify.",
-    },
-    {
       icon: <Code className="w-12 h-12 text-purple-500" />,
       title: "API Development",
       description:
@@ -36,7 +31,7 @@ export default function Services() {
     >
       <div className="container mx-auto px-6 relative z-10">
         <motion.h2
-          className="text-4xl font-bold mb-12 text-center dark:text-white"
+          className="text-4xl font-chakra mb-12 text-center dark:text-white"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -48,7 +43,7 @@ export default function Services() {
           {services.map((service, index) => (
             <motion.div
               key={index}
-              className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+              className="bg-white font-chakra dark:bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -56,9 +51,9 @@ export default function Services() {
             >
               <div className="flex items-center mb-4">
                 {service.icon}
-                <h3 className="text-2xl font-semibold ml-4 dark:text-white">{service.title}</h3>
+                <h3 className="text-2xlfont-chakra ml-4 dark:text-white">{service.title}</h3>
               </div>
-              <p className="text-gray-600 dark:text-gray-300">{service.description}</p>
+              <p className="text-gray-600 font-chakra dark:text-gray-300">{service.description}</p>
             </motion.div>
           ))}
         </div>

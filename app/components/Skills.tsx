@@ -20,13 +20,6 @@ const skills = [
     color: "text-blue-500",
   },
   {
-    icon: Server,
-    name: "Backend Development",
-    tech: "Node.js, Express, Fastify",
-    description: "Creating robust server-side applications with focus on scalability and clean architecture.",
-    color: "text-green-500",
-  },
-  {
     icon: Database,
     name: "Database Management",
     tech: "MongoDB, Mongoose",
@@ -48,25 +41,11 @@ const skills = [
     color: "text-orange-500",
   },
   {
-    icon: Terminal,
-    name: "TypeScript",
-    tech: "TypeScript, JavaScript",
-    description: "Writing type-safe code for better maintainability and developer experience.",
-    color: "text-yellow-500",
-  },
-  {
     icon: Layers,
     name: "State Management",
     tech: "Redux, Context API",
     description: "Managing complex application state with modern state management solutions.",
     color: "text-indigo-500",
-  },
-  {
-    icon: Cpu,
-    name: "API Development",
-    tech: "REST, GraphQL",
-    description: "Designing and implementing efficient APIs for seamless data communication.",
-    color: "text-red-500",
   },
   {
     icon: Globe,
@@ -103,7 +82,7 @@ export default function Skills() {
         </svg>
       </div>
 
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container  font-chakra mx-auto px-6 relative z-10">
         <AnimatedSectionHeader title="Skills & Expertise" />
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {skills.map((skill, index) => (
@@ -114,11 +93,11 @@ export default function Skills() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group">
+              <div className="bg-white  font-chakra dark:bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group">
                 <div className="flex items-center mb-4">
                   <SkillIcon icon={skill.icon} color={skill.color} />
                   <div className="ml-4">
-                    <h3 className="text-lg font-semibold dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300">
+                    <h3 className="text-lg font-chakra dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300">
                       {skill.name}
                     </h3>
                     <p className="text-sm text-gray-600 dark:text-gray-400">{skill.tech}</p>

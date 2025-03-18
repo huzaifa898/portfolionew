@@ -7,24 +7,12 @@ import AnimatedSectionHeader from "./AnimatedSectionHeader"
 
 export default function Experience() {
   const experiences = [
+   
     {
-      company: "Freelance",
-      location: "Remote",
-      period: "2024 - Present",
-      role: "MERN Stack Developer",
-      responsibilities: [
-        "Developing custom web applications for international clients",
-        "Building responsive and scalable frontend interfaces with React",
-        "Implementing secure backend systems with Node.js and Express",
-        "Creating RESTful APIs and managing MongoDB databases",
-        "Collaborating with clients to deliver high-quality solutions",
-      ],
-    },
-    {
-      company: "Salaba Fasteners",
-      location: "Saudi Arabia (Hybrid)",
-      period: "2024 - Present",
-      role: "MERN Stack Developer",
+      company: "Octaloop Technologies",
+      location: "Lahore, Pakistan",
+      period: "JAN-2025 - Present",
+      role: " Junior MERN Stack Developer",
       responsibilities: [
         "Developed full-fledged ERP system using MERN stack",
         "Designed and implemented RESTful APIs",
@@ -34,16 +22,16 @@ export default function Experience() {
       ],
     },
     {
-      company: "TechVention",
+      company: "logical Creation",
       location: "Lahore, Pakistan",
-      period: "2022 - 2024",
-      role: "Software Engineer",
+      period: "OCT-2024 to DEC-2024",
+      role: "Front End Developer Intern",
       responsibilities: [
-        "Migrated codebase to Fastify with TypeScript",
-        "Implemented OOP concepts for scalability",
-        "Built backend REST API and OAuth",
-        "Integrated third-party APIs",
-        "Implemented i18n features",
+        "Developed and maintained company website",
+        "Designed and implemented user interfaces",
+        "Optimized website performance",
+        "Collaborated with team members on projects",
+        "Participated in code reviews",
       ],
     },
   ]
@@ -51,11 +39,11 @@ export default function Experience() {
   return (
     <section
       id="experience"
-      className="py-20 bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-indigo-900 transition-colors duration-300 overflow-hidden relative"
+      className="py-20 font-chakra  bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-indigo-900 transition-colors duration-300 overflow-hidden relative"
     >
-      <div className="container mx-auto px-6 relative z-10">
-        <AnimatedSectionHeader title="Professional Experience" />
-        <div className="space-y-16">
+      <div className="container  mx-auto px-6 relative z-10">
+        <AnimatedSectionHeader  title="Professional Experience" />
+        <div className="space-y-16  ">
           {experiences.map((exp, index) => (
             <motion.div
               key={index}

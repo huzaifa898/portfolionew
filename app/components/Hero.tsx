@@ -4,6 +4,9 @@ import Image from "next/image"
 import { GitlabIcon as GitHub, Linkedin, Mail, ArrowDown } from "lucide-react"
 import { motion } from "framer-motion"
 
+// Import Chakra Petch font
+import "@fontsource/chakra-petch"
+
 const CodePattern = () => (
   <svg className="absolute inset-0 w-full h-full opacity-5" xmlns="http://www.w3.org/2000/svg">
     <pattern
@@ -25,7 +28,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="min-h-screen relative overflow-hidden bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 dark:from-gray-900 dark:via-indigo-900 dark:to-purple-900"
+      className="min-h-screen relative overflow-hidden bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 dark:from-gray-900 dark:via-indigo-900 dark:to-purple-900 font-ChakraPetch"
     >
       {/* Programming-themed Background */}
       <div className="absolute inset-0 z-0">
@@ -45,15 +48,16 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400">
+            <h1 className="text-4xl  md:text-5xl lg:text-6xl  font-chakra mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400">
               Huzaifa Tariq
             </h1>
-            <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-gray-700 dark:text-gray-300">
-              Full Stack Developer
+            <h2 className="text-2xl md:text-3xl  font-chakra mb-6 text-gray-700 dark:text-gray-300">
+              Software Engineer
             </h2>
-            <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 mb-8 max-w-2xl mx-auto lg:mx-0">
-              Crafting exceptional digital experiences with modern web technologies. Specialized in building scalable full-stack applications using MongoDB, Express.js, React, and Node.js.
-            </p>
+            <p className="text-lg font-chakra md:text-xl text-gray-600 dark:text-gray-400 mb-8 max-w-2xl mx-auto lg:mx-0 text-justify">
+            Frontend Developer skilled in React.js and Next.js, creating dynamic and responsive web experiences. Passionate about sleek UI, performance, and modern web technologies
+</p>
+
             <div className="flex justify-center lg:justify-start space-x-4 mb-8">
               <a
                 href="https://github.com/huzaifa898"
@@ -79,7 +83,7 @@ export default function Hero() {
             </div>
             <motion.button
               onClick={() => document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })}
-              className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full hover:from-blue-700 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl"
+              className="inline-flex font-chakra items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full hover:from-blue-700 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -100,7 +104,7 @@ export default function Hero() {
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <Image
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_0812.jpg-jQSxWaycmtpBR7IUnsPV8C8L3vlrQ2.jpeg"
-                  alt="Usman Zafar"
+                  alt="Huzaifa "
                   fill
                   className="object-cover"
                   priority

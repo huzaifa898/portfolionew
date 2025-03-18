@@ -4,9 +4,9 @@ module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
-      "*.{js,ts,jsx,tsx,mdx}"
-],
+    "./app/**/*.{js,ts,jsx,tsx,mdx}"
+  ],
+  
   theme: {
     extend: {
       colors: {
@@ -49,8 +49,10 @@ module.exports = {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      fontFamily: {
+        chakra: ['"Chakra Petch"', 'sans-serif'], // Corrected font name
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],
 }
-
